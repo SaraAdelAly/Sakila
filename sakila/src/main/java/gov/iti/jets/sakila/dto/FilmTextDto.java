@@ -1,4 +1,4 @@
-package gov.iti.jets.sakila;
+package gov.iti.jets.sakila.dto;
 
 import lombok.Data;
 
