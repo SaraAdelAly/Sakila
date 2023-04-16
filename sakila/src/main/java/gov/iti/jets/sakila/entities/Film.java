@@ -33,6 +33,10 @@ public class Film {
     @JoinColumn(name = "language_id", nullable = false)
     private Language language;
 
+    @ManyToOne (fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name= "rating_id", nullable = false)
+    private Rating rating;
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "original_language_id")
     private Language originalLanguage;
@@ -49,8 +53,10 @@ public class Film {
     @Column(name = "replacement_cost", nullable = false, precision = 5, scale = 2)
     private BigDecimal replacementCost;
 
-    @Column(name = "rating", length = 5)
-    private String rating;
+//    @Column(name = "rating", length = 5)
+//    private String rating;
+
+
 
     @Column(name = "special_features", length = 54)
     private String specialFeatures;

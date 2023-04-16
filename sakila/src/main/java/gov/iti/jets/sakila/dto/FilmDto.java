@@ -1,9 +1,5 @@
 package gov.iti.jets.sakila.dto;
 
-import gov.iti.jets.sakila.dto.FilmActorDto;
-import gov.iti.jets.sakila.dto.FilmCategoryDto;
-import gov.iti.jets.sakila.dto.InventoryDto;
-import gov.iti.jets.sakila.dto.LanguageDto;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
