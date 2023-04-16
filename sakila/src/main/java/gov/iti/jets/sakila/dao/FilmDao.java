@@ -1,6 +1,7 @@
 package gov.iti.jets.sakila.dao;
 
 import gov.iti.jets.sakila.daoInterface.FilmInt;
+import gov.iti.jets.sakila.daoInterface.FilmIterator;
 import gov.iti.jets.sakila.entities.Film;
 import gov.iti.jets.sakila.entities.Language;
 import gov.iti.jets.sakila.entities.Rating;
@@ -73,11 +74,20 @@ public class FilmDao implements FilmInt {
         return query.getResultList();
     }
 
-    public List<Film> findFilmByLanguage(Language language) {
+    public FilmIterator findFilmByLanguageIdWithIterator(int languageId) {
 
-        String jpql = "SELECT f FROM Film f WHERE f.language = :language";
+        String jpql = "SELECT f FROM Film f WHERE f.language.id = :languageId";
         Query query = entityManager.createQuery(jpql, Film.class);
-        query.setParameter("language", language);
+        query.setParameter("languageId", languageId);
+
+        List<Film> films = query.getResultList();
+        return new FilmIteratorImpl(films);
+    }
+    @Override
+    public List<Film> findFilmByLanguageId (int languageId) {
+        String jpql = "SELECT f FROM Film f WHERE f.language.id = :languageId";
+        Query query = entityManager.createQuery(jpql, Film.class);
+        query.setParameter("languageId", languageId);
         return query.getResultList();
     }
 
@@ -88,6 +98,12 @@ public class FilmDao implements FilmInt {
         return (Film) query.getSingleResult();
     }
 
+    public Long countFilmsSameCategory (int categoryId){
+        String jpql = "SELECT COUNT (fc) FROM FilmCategory fc  WHERE fc.category.id= :categoryId";
+        Query query = entityManager.createQuery(jpql);
+        query.setParameter("categoryId" , categoryId);
+        return (Long) query.getSingleResult();
+    }
 //    public Film setRating (Rating rating){
 //        String jpql = "SELECT f FROM Film f JOIN FETCH f.rating r WHERE f.id = :filmId";
 //    }

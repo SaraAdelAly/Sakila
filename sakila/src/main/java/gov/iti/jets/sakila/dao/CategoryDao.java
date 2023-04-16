@@ -1,7 +1,10 @@
 package gov.iti.jets.sakila.dao;
 
 import gov.iti.jets.sakila.entities.Category;
+import gov.iti.jets.sakila.entities.Film;
 import jakarta.persistence.*;
+
+import java.util.Set;
 
 public class CategoryDao {
 
@@ -23,6 +26,5 @@ public class CategoryDao {
         entityManager.refresh(category);
         return category;
     }
-
 
 }

@@ -25,7 +25,7 @@ public interface FilmInt {
 
     List<Film> findFilmByOriginalLanguage(Language originalLanguage);
 
-    List<Film> findFilmByLanguage(Language language);
+    List<Film> findFilmByLanguageId(int languageId);
 
 
 //    Film giveRatingToFilm (String rating);

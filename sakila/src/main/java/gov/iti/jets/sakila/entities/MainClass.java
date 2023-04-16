@@ -2,9 +2,7 @@ package gov.iti.jets.sakila.entities;
 
 import com.mysql.cj.Query;
 
-import gov.iti.jets.sakila.dao.CustomerDao;
-import gov.iti.jets.sakila.dao.FilmDao;
-import gov.iti.jets.sakila.dao.RatingDao;
+import gov.iti.jets.sakila.dao.*;
 import gov.iti.jets.sakila.entities.enums.RatingType;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
@@ -71,9 +69,13 @@ public class MainClass {
 
 
          CustomerDao customerDao = new CustomerDao();
-    
+        CategoryDao categoryDao = new CategoryDao();
+        InventoryDao inventoryDao = new InventoryDao();
+        StoreDao storeDao = new StoreDao();
+
 //     System.out.println( ratingId);
-        System.out.println(customerDao.countCustomersByStore(2));
+//        System.out.println(filmDao.findFilmByLanguageId(1));
+        System.out.println(storeDao.getStoreByManagerName("Mike","Hillyer"));
 //        System.out.println(filmDao.findFilmByTitle("ACADEMY DINOSAUR"));
 
 
