@@ -9,10 +9,10 @@ import java.util.List;
 public interface CustomerInt {
 
     List<Customer> findCustomersByAddress (Integer addressId);
-    Customer add (Customer customer);
+    Customer addCustomer (Customer customer);
     Customer findCustomerByName (String firstName, String lastName);
     Boolean getCustomerActivity (Integer customerId);
     Store getCustomerStore (Integer customerId);
-    List<Customer> groupCustomersWithSameStore (Integer storeId);
+    List<Customer> groupCustomersOfSameStore (Integer storeId);
     Long countCustomersByStore(Integer storeId);
 }

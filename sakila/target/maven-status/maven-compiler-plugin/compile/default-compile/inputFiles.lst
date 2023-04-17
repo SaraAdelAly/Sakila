@@ -6,8 +6,10 @@ C:\Users\Sara Adel\Desktop\sakila\Sakila\sakila\src\main\java\gov\iti\jets\sakil
 C:\Users\Sara Adel\Desktop\sakila\Sakila\sakila\src\main\java\gov\iti\jets\sakila\entities\Language.java
 C:\Users\Sara Adel\Desktop\sakila\Sakila\sakila\src\main\java\gov\iti\jets\sakila\entities\Inventory.java
 C:\Users\Sara Adel\Desktop\sakila\Sakila\sakila\src\main\java\gov\iti\jets\sakila\dto\StaffDto.java
+C:\Users\Sara Adel\Desktop\sakila\Sakila\sakila\src\main\java\gov\iti\jets\sakila\dao\RentalDao.java
 C:\Users\Sara Adel\Desktop\sakila\Sakila\sakila\src\main\java\gov\iti\jets\sakila\entities\Actor.java
 C:\Users\Sara Adel\Desktop\sakila\Sakila\sakila\src\main\java\gov\iti\jets\sakila\mappers\FilmMapper.java
+C:\Users\Sara Adel\Desktop\sakila\Sakila\sakila\src\main\java\gov\iti\jets\sakila\daoInterface\PaymentInt.java
 C:\Users\Sara Adel\Desktop\sakila\Sakila\sakila\src\main\java\gov\iti\jets\sakila\dao\CategoryDao.java
 C:\Users\Sara Adel\Desktop\sakila\Sakila\sakila\src\main\java\gov\iti\jets\sakila\mappers\FilmActorMapper.java
 C:\Users\Sara Adel\Desktop\sakila\Sakila\sakila\src\main\java\gov\iti\jets\sakila\dto\InventoryDto.java
@@ -35,6 +37,8 @@ C:\Users\Sara Adel\Desktop\sakila\Sakila\sakila\src\main\java\gov\iti\jets\sakil
 C:\Users\Sara Adel\Desktop\sakila\Sakila\sakila\src\main\java\gov\iti\jets\sakila\services\CustomerService.java
 C:\Users\Sara Adel\Desktop\sakila\Sakila\sakila\src\main\java\gov\iti\jets\sakila\entities\Payment.java
 C:\Users\Sara Adel\Desktop\sakila\Sakila\sakila\src\main\java\gov\iti\jets\sakila\entities\FilmCategory.java
+C:\Users\Sara Adel\Desktop\sakila\Sakila\sakila\src\main\java\gov\iti\jets\sakila\dao\PaymentDao.java
+C:\Users\Sara Adel\Desktop\sakila\Sakila\sakila\src\main\java\gov\iti\jets\sakila\daoInterface\RentalInt.java
 C:\Users\Sara Adel\Desktop\sakila\Sakila\sakila\src\main\java\gov\iti\jets\sakila\entities\Customer.java
 C:\Users\Sara Adel\Desktop\sakila\Sakila\sakila\src\main\java\gov\iti\jets\sakila\daoInterface\LaguageInt.java
 C:\Users\Sara Adel\Desktop\sakila\Sakila\sakila\src\main\java\gov\iti\jets\sakila\dao\LanguageDao.java
@@ -47,6 +51,7 @@ C:\Users\Sara Adel\Desktop\sakila\Sakila\sakila\src\main\java\gov\iti\jets\sakil
 C:\Users\Sara Adel\Desktop\sakila\Sakila\sakila\src\main\java\gov\iti\jets\sakila\mappers\CategoryMapper.java
 C:\Users\Sara Adel\Desktop\sakila\Sakila\sakila\src\main\java\gov\iti\jets\sakila\daoInterface\InventoryInt.java
 C:\Users\Sara Adel\Desktop\sakila\Sakila\sakila\src\main\java\gov\iti\jets\sakila\entities\enums\RatingType.java
+C:\Users\Sara Adel\Desktop\sakila\Sakila\sakila\src\main\java\gov\iti\jets\sakila\dao\AddressDao.java
 C:\Users\Sara Adel\Desktop\sakila\Sakila\sakila\src\main\java\gov\iti\jets\sakila\daoInterface\ActorInt.java
 C:\Users\Sara Adel\Desktop\sakila\Sakila\sakila\src\main\java\gov\iti\jets\sakila\daoInterface\CustomerInt.java
 C:\Users\Sara Adel\Desktop\sakila\Sakila\sakila\src\main\java\gov\iti\jets\sakila\dto\AddressDto.java

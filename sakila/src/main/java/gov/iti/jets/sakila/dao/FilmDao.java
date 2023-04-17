@@ -16,19 +16,19 @@ public class FilmDao implements FilmInt {
     EntityManager entityManager = entityManagerFactory.createEntityManager();
 
 
-//    public List<Film> findFilmsByActorName(String actorFirstName, String actorLastName) {
-//
-//        try {
-//            String jpql = "SELECT fa.film FROM FilmActor fa JOIN fa.actor a WHERE a.firstName = :actorFirstName AND a.lastName=:actorLastName";
-//            Query query = entityManager.createQuery(jpql, List.class);
-//            query.setParameter("actorFirstName", actorFirstName);
-//            query.setParameter("actorLastName", actorLastName);
-//
-//            return query.getResultList();
-//        } finally {
-//            entityManager.close();
-//        }
-//    }
+    public List<Film> findFilmsByActorName(String actorFirstName, String actorLastName) {
+
+        try {
+            String jpql = "SELECT fa.film FROM FilmActor fa JOIN fa.actor a WHERE a.firstName = :actorFirstName AND a.lastName=:actorLastName";
+            Query query = entityManager.createQuery(jpql, List.class);
+            query.setParameter("actorFirstName", actorFirstName);
+            query.setParameter("actorLastName", actorLastName);
+
+            return query.getResultList();
+        } finally {
+            entityManager.close();
+        }
+    }
 
     public Set<Film> findAllFilmsSameCateg (String categoryName) {
 
@@ -49,7 +49,7 @@ public class FilmDao implements FilmInt {
         return (Film) query.getSingleResult();
     }
 
-    public Film add(Film film) {
+    public Film addFilm (Film film) {
         EntityTransaction transaction = entityManager.getTransaction();
         transaction.begin();
         entityManager.persist(film);
@@ -57,15 +57,13 @@ public class FilmDao implements FilmInt {
         entityManager.refresh(film);
         return film;
     }
+    @Override
+    public void deleteFilmById (int filmId) {
+        String jpql = "DELETE f FROM Film f WHERE f.id = :filmId";
+        Query query = entityManager.createQuery(jpql, Film.class);
+        query.setParameter("filmId", filmId);
+        query.executeUpdate();
 
-    public void deleteById(Film film, Integer id) {
-        EntityTransaction transaction = entityManager.getTransaction();
-        film = entityManager.find(Film.class, id);
-        transaction.begin();
-        if (film != null) {
-            entityManager.remove(film);
-            transaction.commit();
-        }
     }
 
     public List<Film> findFilmByOriginalLanguage(Language originalLanguage) {
@@ -84,7 +82,7 @@ public class FilmDao implements FilmInt {
         return new FilmIteratorImpl(films);
     }
     @Override
-    public List<Film> findFilmByLanguageId (int languageId) {
+    public List<Film> findFilmsByLanguageId (int languageId) {
         String jpql = "SELECT f FROM Film f WHERE f.language.id = :languageId";
         Query query = entityManager.createQuery(jpql, Film.class);
         query.setParameter("languageId", languageId);

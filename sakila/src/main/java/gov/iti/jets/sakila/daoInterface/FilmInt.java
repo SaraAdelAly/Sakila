@@ -11,9 +11,9 @@ import java.util.Set;
 
 public interface FilmInt {
 
-    Film add(Film film);
+    Film addFilm (Film film);
 
-    void deleteById(Film film, Integer id);
+   void deleteFilmById (int filmId);
 
     Set<Film> findAllFilmsSameCateg(String categoryName);
 
@@ -25,7 +25,7 @@ public interface FilmInt {
 
     List<Film> findFilmByOriginalLanguage(Language originalLanguage);
 
-    List<Film> findFilmByLanguageId(int languageId);
+    List<Film> findFilmsByLanguageId(int languageId);
 
 
 //    Film giveRatingToFilm (String rating);

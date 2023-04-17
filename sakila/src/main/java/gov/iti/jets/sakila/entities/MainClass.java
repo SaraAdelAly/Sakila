@@ -8,6 +8,8 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
 
+import java.time.LocalDate;
+import java.time.Month;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -72,10 +74,12 @@ public class MainClass {
         CategoryDao categoryDao = new CategoryDao();
         InventoryDao inventoryDao = new InventoryDao();
         StoreDao storeDao = new StoreDao();
+        RentalDao rentalDao = new RentalDao();
+        PaymentDao paymentDao = new PaymentDao();
 
 //     System.out.println( ratingId);
 //        System.out.println(filmDao.findFilmByLanguageId(1));
-        System.out.println(storeDao.getStoreByManagerName("Mike","Hillyer"));
+        System.out.println(filmDao.findFilmsByActorName("PENELOPE", "GUINESS"));
 //        System.out.println(filmDao.findFilmByTitle("ACADEMY DINOSAUR"));
 
 

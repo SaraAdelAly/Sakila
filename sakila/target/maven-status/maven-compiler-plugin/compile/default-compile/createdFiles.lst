@@ -10,6 +10,7 @@ gov\iti\jets\sakila\mappers\FilmMapper.class
 gov\iti\jets\sakila\daoInterface\ActorInt.class
 gov\iti\jets\sakila\mappers\CustomerMappper.class
 gov\iti\jets\sakila\entities\FilmText.class
+gov\iti\jets\sakila\daoInterface\RentalInt.class
 gov\iti\jets\sakila\dto\StoreDto.class
 gov\iti\jets\sakila\dto\RentalDto.class
 gov\iti\jets\sakila\dao\CustomerDao.class
@@ -17,6 +18,7 @@ gov\iti\jets\sakila\mappers\ActorMapper.class
 gov\iti\jets\sakila\dao\LanguageDao.class
 gov\iti\jets\sakila\dao\StoreDao.class
 gov\iti\jets\sakila\entities\Rental.class
+gov\iti\jets\sakila\dao\PaymentDao.class
 gov\iti\jets\sakila\dao\RatingDao.class
 gov\iti\jets\sakila\dao\ActorDao.class
 gov\iti\jets\sakila\dto\AddressDto.class
@@ -28,6 +30,7 @@ gov\iti\jets\sakila\dao\FilmIteratorImpl.class
 gov\iti\jets\sakila\mappers\FilmActorMapper.class
 gov\iti\jets\sakila\entities\Film.class
 gov\iti\jets\sakila\entities\Store.class
+gov\iti\jets\sakila\daoInterface\PaymentInt.class
 gov\iti\jets\sakila\entities\Actor.class
 gov\iti\jets\sakila\entities\Address.class
 gov\iti\jets\sakila\entities\Inventory.class
@@ -52,6 +55,7 @@ gov\iti\jets\sakila\dto\FilmActorDto.class
 gov\iti\jets\sakila\dao\CategoryDao.class
 gov\iti\jets\sakila\entities\FilmCategoryId.class
 gov\iti\jets\sakila\entities\Staff.class
+gov\iti\jets\sakila\dao\AddressDao.class
 gov\iti\jets\sakila\daoInterface\FilmInt.class
 gov\iti\jets\sakila\entities\Rating.class
 gov\iti\jets\sakila\dto\PaymentDto.class
@@ -60,5 +64,6 @@ gov\iti\jets\sakila\entities\FilmCategory.class
 gov\iti\jets\sakila\services\FilmService.class
 gov\iti\jets\sakila\mappers\FilmCategoryMapper.class
 gov\iti\jets\sakila\dto\FilmDto.class
+gov\iti\jets\sakila\dao\RentalDao.class
 gov\iti\jets\sakila\entities\enums\RatingType.class
 gov\iti\jets\sakila\dto\CityDto.class

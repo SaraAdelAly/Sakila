@@ -18,7 +18,7 @@ public class CategoryDao {
         query.setParameter("title", title);
         return (Category) query.getSingleResult();
     }
-    public Category add (Category category){
+    public Category addCategory (Category category){
         EntityTransaction transaction = entityManager.getTransaction();
         transaction.begin();
         entityManager.persist(category);

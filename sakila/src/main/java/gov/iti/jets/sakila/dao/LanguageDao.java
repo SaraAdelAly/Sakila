@@ -1,8 +1,11 @@
 package gov.iti.jets.sakila.dao;
 
 import gov.iti.jets.sakila.daoInterface.LaguageInt;
+import gov.iti.jets.sakila.entities.Film;
 import gov.iti.jets.sakila.entities.Language;
 import jakarta.persistence.*;
+
+import java.util.List;
 
 public class LanguageDao implements LaguageInt {
 
@@ -10,7 +13,7 @@ public class LanguageDao implements LaguageInt {
     EntityManager entityManager = entityManagerFactory.createEntityManager();
 
     @Override
-    public Language add(Language language){
+    public Language addLanguage(Language language){
         EntityTransaction transaction = entityManager.getTransaction();
         transaction.begin();
         entityManager.persist(language);
@@ -18,5 +21,11 @@ public class LanguageDao implements LaguageInt {
         entityManager.refresh(language);
         return language;
 
+    }
+    public Language findLanguageById(int languageId){
+        String jpql = "SELECT l FROM Language l WHERE l.id = :languageId";
+        Query query = entityManager.createQuery(jpql);
+        query.setParameter("languageId", languageId);
+        return (Language) query.getSingleResult();
     }
 }

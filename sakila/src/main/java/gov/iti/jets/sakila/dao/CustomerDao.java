@@ -13,7 +13,7 @@ public class CustomerDao implements CustomerInt {
     EntityManager entityManager = entityManagerFactory.createEntityManager();
 
     @Override
-    public Customer add(Customer customer) {
+    public Customer addCustomer(Customer customer) {
         EntityTransaction transaction = entityManager.getTransaction();
         transaction.begin();
         entityManager.persist(customer);
@@ -60,7 +60,7 @@ public class CustomerDao implements CustomerInt {
     }
 
     @Override
-    public List<Customer> groupCustomersWithSameStore(Integer storeId) {
+    public List<Customer> groupCustomersOfSameStore(Integer storeId) {
         String jpql = "SELECT c FROM Customer c WHERE c.store.id = :storeId ";
         Query query = entityManager.createQuery(jpql, Customer.class);
         query.setParameter("storeId", storeId);

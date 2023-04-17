@@ -11,7 +11,7 @@ public class ActorDao implements ActorInt {
     EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("sakila");
     EntityManager entityManager = entityManagerFactory.createEntityManager();
 
-    public Actor create(Actor actor){
+    public Actor addActor(Actor actor){
         EntityTransaction transaction = entityManager.getTransaction();
         transaction.begin();
         entityManager.persist(actor);
@@ -20,7 +20,7 @@ public class ActorDao implements ActorInt {
         return actor;
     }
 
-    public Actor read(Integer id){
+    public Actor getActorById(Integer id){
         String jpql = "SELECT a FROM Actor a WHERE a.id =: id";
         Query query = entityManager.createQuery(jpql, Actor.class);
         query.setParameter("id", id);
