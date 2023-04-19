@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="JpbDataSourceConfig">
-    <data-sources>
-      <data-source id="984299e2-9a90-48c9-9d97-a9e2bd590b1d" name="sakila" url="jdbc:mysql://localhost/sakila?useSSL=false&amp;allowMultiQueries=true&amp;serverTimezone=UTC" driverClass="com.mysql.cj.jdbc.Driver" />
-    </data-sources>
-  </component>
-</project>

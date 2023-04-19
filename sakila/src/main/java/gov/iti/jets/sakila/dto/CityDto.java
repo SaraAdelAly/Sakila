@@ -3,14 +3,19 @@ package gov.iti.jets.sakila.dto;
 import gov.iti.jets.sakila.dto.AddressDto;
 import gov.iti.jets.sakila.dto.CountryDto;
 import jakarta.persistence.*;
-import lombok.Data;
+// import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
+// import lombok.ToString;
 
 import java.io.Serializable;
 import java.time.Instant;
 import java.util.LinkedHashSet;
 import java.util.Set;
-@Data
+@Setter
+@Getter
+// @ToString
 @NoArgsConstructor
 public class CityDto implements Serializable{
 

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<endpoints xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime" version="2.0">
+    <endpoint
+            name="ActorWebService"
+            implementation="gov.iti.jets.sakila.soap.services.ActorWebServices"
+            url-pattern="/ws/actor"/>
+    <endpoint
+            name="AddressWebServices"
+            implementation="gov.iti.jets.sakila.soap.services.AddressWebServices"
+            url-pattern="/ws/address"/>
+    <endpoint
+            name="CategoryWebService"
+            implementation="gov.iti.jets.sakila.soap.services.CategoryWebServices"
+            url-pattern="/ws/category"/>
+
+    <endpoint
+            name="CustomerWebService"
+            implementation="gov.iti.jets.sakila.soap.services.CustomerWebServices"
+            url-pattern="/ws/customer"/>
+
+    <endpoint
+            name="FilmWebService"
+            implementation="gov.iti.jets.sakila.soap.services.FilmWebServices"
+            url-pattern="/ws/film"/>
+    <endpoint
+            name="InventoryWebService"
+            implementation="gov.iti.jets.sakila.soap.services.InventoryWebServices"
+            url-pattern="/ws/inventory"/>
+    <endpoint
+            name="LanguageWebService"
+            implementation="gov.iti.jets.sakila.soap.services.LanguageWebServices"
+            url-pattern="/ws/language"/>
+    <endpoint
+            name="RentalWebService"
+            implementation="gov.iti.jets.sakila.soap.services.RentalWebServices"
+            url-pattern="/ws/rental"/>
+    <endpoint
+            name="StaffWebService"
+            implementation="gov.iti.jets.sakila.soap.services.StaffWebServices"
+            url-pattern="/ws/staff"/>
+    <endpoint
+            name="StoreWebService"
+            implementation="gov.iti.jets.sakila.soap.services.StoreWebServices"
+            url-pattern="/ws/store"/>
+    <endpoint
+            name="PaymentWebService"
+            implementation="gov.iti.jets.sakila.soap.services.PaymentWebServices"
+            url-pattern="/ws/payment"/>
+</endpoints>

@@ -2,13 +2,19 @@ package gov.iti.jets.sakila.dto;
 
 import gov.iti.jets.sakila.dto.FilmActorIdDto;
 import jakarta.persistence.Column;
-import lombok.Data;
+// import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
+// import lombok.ToString;
+
 import org.hibernate.Hibernate;
 
 import java.io.Serializable;
 import java.util.Objects;
-@Data
+@Setter
+@Getter
+// @ToString
 @NoArgsConstructor
 public class FilmActorIdDto implements Serializable {
 

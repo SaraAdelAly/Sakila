@@ -2,13 +2,19 @@ package gov.iti.jets.sakila.dto;
 
 import gov.iti.jets.sakila.dto.FilmCategoryIdDto;
 import jakarta.persistence.Column;
-import lombok.Data;
+// import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
+// import lombok.ToString;
+
 import org.hibernate.Hibernate;
 
 import java.io.Serializable;
 import java.util.Objects;
-@Data
+@Setter
+@Getter
+// @ToString
 @NoArgsConstructor
 public class FilmCategoryIdDto implements Serializable {
     private static final long serialVersionUID = 2589638132736110115L;
