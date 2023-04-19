@@ -1,8 +1,9 @@
 package gov.iti.jets.sakila.services;
 
-import gov.iti.jets.sakila.persistance.dao.StaffDao;
 import gov.iti.jets.sakila.dto.StaffDto;
-import gov.iti.jets.sakila.persistance.entities.Staff;
+import gov.iti.jets.sakila.persistence.dao.StaffDao;
+import gov.iti.jets.sakila.persistence.entities.Staff;
+
 import org.modelmapper.ModelMapper;
 
 import java.util.ArrayList;

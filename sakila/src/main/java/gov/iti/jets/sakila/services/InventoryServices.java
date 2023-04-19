@@ -1,8 +1,9 @@
 package gov.iti.jets.sakila.services;
 
-import gov.iti.jets.sakila.persistance.dao.InventoryDao;
 import gov.iti.jets.sakila.dto.InventoryDto;
-import gov.iti.jets.sakila.persistance.entities.Inventory;
+import gov.iti.jets.sakila.persistence.dao.InventoryDao;
+import gov.iti.jets.sakila.persistence.entities.Inventory;
+
 import org.modelmapper.ModelMapper;
 
 import java.util.ArrayList;

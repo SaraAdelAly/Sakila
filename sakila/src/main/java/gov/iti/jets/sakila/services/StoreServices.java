@@ -1,12 +1,13 @@
 package gov.iti.jets.sakila.services;
 
-import gov.iti.jets.sakila.persistance.dao.StoreDao;
 import gov.iti.jets.sakila.dto.AddressDto;
 import gov.iti.jets.sakila.dto.StaffDto;
 import gov.iti.jets.sakila.dto.StoreDto;
-import gov.iti.jets.sakila.persistance.entities.Address;
-import gov.iti.jets.sakila.persistance.entities.Staff;
-import gov.iti.jets.sakila.persistance.entities.Store;
+import gov.iti.jets.sakila.persistence.dao.StoreDao;
+import gov.iti.jets.sakila.persistence.entities.Address;
+import gov.iti.jets.sakila.persistence.entities.Staff;
+import gov.iti.jets.sakila.persistence.entities.Store;
+
 import org.modelmapper.ModelMapper;
 
 public class StoreServices {

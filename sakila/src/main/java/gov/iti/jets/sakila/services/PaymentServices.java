@@ -1,8 +1,9 @@
 package gov.iti.jets.sakila.services;
 
-import gov.iti.jets.sakila.persistance.dao.PaymentDao;
 import jakarta.persistence.Query;
 import org.modelmapper.ModelMapper;
+
+import gov.iti.jets.sakila.persistence.dao.PaymentDao;
 
 public class PaymentServices {
     private ModelMapper modelMapper = new ModelMapper();

@@ -5,7 +5,7 @@ import lombok.Data;
 import java.io.Serializable;
 
 /**
- * A DTO for the {@link gov.iti.jets.sakila.persistance.entities.FilmText} entity
+ * A DTO for the {@link gov.iti.jets.sakila.persistence.entities.FilmText} entity
  */
 @Data
 public class FilmTextDto implements Serializable {

@@ -1,6 +1,6 @@
 package gov.iti.jets.sakila.soap.services;
 
-import gov.iti.jets.sakila.persistance.dao.PaymentDao;
+import gov.iti.jets.sakila.persistence.dao.PaymentDao;
 import gov.iti.jets.sakila.services.PaymentServices;
 import jakarta.jws.WebMethod;
 import jakarta.jws.WebParam;

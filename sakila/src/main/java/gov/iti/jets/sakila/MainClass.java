@@ -1,8 +1,7 @@
 package gov.iti.jets.sakila;
 
-import gov.iti.jets.sakila.persistance.dao.FilmDao;
+import gov.iti.jets.sakila.persistence.dao.*;
 import gov.iti.jets.sakila.soap.services.ActorWebServices;
-import gov.iti.jets.sakila.persistance.dao.*;
 
 public class MainClass {
 

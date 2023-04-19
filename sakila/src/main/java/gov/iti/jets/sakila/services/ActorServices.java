@@ -1,8 +1,9 @@
 package gov.iti.jets.sakila.services;
 
-import gov.iti.jets.sakila.persistance.dao.ActorDao;
 import gov.iti.jets.sakila.dto.ActorDto;
-import gov.iti.jets.sakila.persistance.entities.Actor;
+import gov.iti.jets.sakila.persistence.dao.ActorDao;
+import gov.iti.jets.sakila.persistence.entities.Actor;
+
 import org.modelmapper.ModelMapper;
 
 import java.util.ArrayList;

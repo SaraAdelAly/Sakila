@@ -1,7 +1,7 @@
 package gov.iti.jets.sakila.soap.services;
 
-import gov.iti.jets.sakila.persistance.dao.ActorDao;
 import gov.iti.jets.sakila.dto.ActorDto;
+import gov.iti.jets.sakila.persistence.dao.ActorDao;
 import gov.iti.jets.sakila.services.ActorServices;
 import jakarta.jws.WebMethod;
 import jakarta.jws.WebParam;

@@ -1,8 +1,8 @@
 package gov.iti.jets.sakila.soap.services;
 
-import gov.iti.jets.sakila.persistance.dao.AddressDao;
 import gov.iti.jets.sakila.dto.AddressDto;
-import gov.iti.jets.sakila.persistance.entities.Address;
+import gov.iti.jets.sakila.persistence.dao.AddressDao;
+import gov.iti.jets.sakila.persistence.entities.Address;
 import gov.iti.jets.sakila.services.AddressServices;
 import jakarta.jws.WebMethod;
 import jakarta.jws.WebParam;

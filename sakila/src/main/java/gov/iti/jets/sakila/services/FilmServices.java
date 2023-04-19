@@ -1,10 +1,11 @@
 package gov.iti.jets.sakila.services;
 
-import gov.iti.jets.sakila.persistance.dao.FilmDao;
 import gov.iti.jets.sakila.dto.FilmDto;
 import gov.iti.jets.sakila.dto.LanguageDto;
-import gov.iti.jets.sakila.persistance.entities.Film;
-import gov.iti.jets.sakila.persistance.entities.Language;
+import gov.iti.jets.sakila.persistence.dao.FilmDao;
+import gov.iti.jets.sakila.persistence.entities.Film;
+import gov.iti.jets.sakila.persistence.entities.Language;
+
 import org.modelmapper.ModelMapper;
 
 import java.util.ArrayList;

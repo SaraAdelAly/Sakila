@@ -1,10 +1,10 @@
 package gov.iti.jets.sakila.soap.services;
 
-import gov.iti.jets.sakila.persistance.dao.CustomerDao;
 import gov.iti.jets.sakila.dto.CustomerDto;
 import gov.iti.jets.sakila.dto.StoreDto;
-import gov.iti.jets.sakila.persistance.entities.Customer;
-import gov.iti.jets.sakila.persistance.entities.Store;
+import gov.iti.jets.sakila.persistence.dao.CustomerDao;
+import gov.iti.jets.sakila.persistence.entities.Customer;
+import gov.iti.jets.sakila.persistence.entities.Store;
 import gov.iti.jets.sakila.services.CustomerServices;
 import jakarta.jws.WebMethod;
 import jakarta.jws.WebParam;

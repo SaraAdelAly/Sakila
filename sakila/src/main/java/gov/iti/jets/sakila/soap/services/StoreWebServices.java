@@ -1,9 +1,9 @@
 package gov.iti.jets.sakila.soap.services;
 
-import gov.iti.jets.sakila.persistance.dao.StoreDao;
 import gov.iti.jets.sakila.dto.AddressDto;
 import gov.iti.jets.sakila.dto.StaffDto;
 import gov.iti.jets.sakila.dto.StoreDto;
+import gov.iti.jets.sakila.persistence.dao.StoreDao;
 import gov.iti.jets.sakila.services.StoreServices;
 import jakarta.jws.WebMethod;
 import jakarta.jws.WebParam;

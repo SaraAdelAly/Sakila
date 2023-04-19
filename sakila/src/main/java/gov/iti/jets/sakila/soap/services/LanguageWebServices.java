@@ -1,8 +1,8 @@
 package gov.iti.jets.sakila.soap.services;
 
-import gov.iti.jets.sakila.persistance.dao.LanguageDao;
 import gov.iti.jets.sakila.dto.LanguageDto;
-import gov.iti.jets.sakila.persistance.entities.Language;
+import gov.iti.jets.sakila.persistence.dao.LanguageDao;
+import gov.iti.jets.sakila.persistence.entities.Language;
 import gov.iti.jets.sakila.services.LanguageServices;
 import jakarta.jws.WebMethod;
 import jakarta.jws.WebParam;

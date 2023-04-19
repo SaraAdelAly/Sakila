@@ -1,8 +1,9 @@
 package gov.iti.jets.sakila.services;
 
-import gov.iti.jets.sakila.persistance.dao.AddressDao;
 import gov.iti.jets.sakila.dto.AddressDto;
-import gov.iti.jets.sakila.persistance.entities.Address;
+import gov.iti.jets.sakila.persistence.dao.AddressDao;
+import gov.iti.jets.sakila.persistence.entities.Address;
+
 import org.modelmapper.ModelMapper;
 
 public class AddressServices {
