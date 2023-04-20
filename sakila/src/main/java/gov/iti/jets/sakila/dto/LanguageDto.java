@@ -8,6 +8,7 @@ import lombok.Setter;
 
 import java.io.Serializable;
 import java.time.Instant;
+import java.util.Date;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
@@ -16,9 +17,9 @@ import java.util.Set;
 // @ToString
 @NoArgsConstructor
 public class LanguageDto implements Serializable {
-    private final Set<FilmDto> films = new LinkedHashSet<>();
+    // private final Set<FilmDto> films = new LinkedHashSet<>();
     private Short id;
     private String name;
-    private Instant lastUpdate;
+    private Date lastUpdate;
 
 }

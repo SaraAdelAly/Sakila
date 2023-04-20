@@ -8,6 +8,7 @@ import lombok.Setter;
 
 import java.io.Serializable;
 import java.time.Instant;
+import java.util.Date;
 
 @Setter
 @Getter
@@ -17,6 +18,6 @@ public class FilmCategoryDto implements Serializable {
     private FilmCategoryIdDto id;
     private FilmDto film;
     private CategoryDto category;
-    private Instant lastUpdate;
+    private Date lastUpdate;
 
 }

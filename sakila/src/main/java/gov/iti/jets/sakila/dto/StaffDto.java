@@ -8,6 +8,7 @@ import lombok.Setter;
 
 import java.io.Serializable;
 import java.time.Instant;
+import java.util.Date;
 import java.util.LinkedHashSet;
 import java.util.Set;
 @Setter
@@ -16,8 +17,8 @@ import java.util.Set;
 @NoArgsConstructor
 public class StaffDto implements Serializable {
     private final Boolean active = false;
-    private final Set<PaymentDto> payments = new LinkedHashSet<>();
-    private final Set<RentalDto> rentals = new LinkedHashSet<>();
+    // private final Set<PaymentDto> payments = new LinkedHashSet<>();
+    // private final Set<RentalDto> rentals = new LinkedHashSet<>();
     private Short id;
     private String firstName;
     private String lastName;
@@ -27,6 +28,6 @@ public class StaffDto implements Serializable {
     private StoreDto store;
     private String username;
     private String password;
-    private Instant lastUpdate;
+    private Date lastUpdate;
 
 }

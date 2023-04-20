@@ -11,6 +11,7 @@ import lombok.Setter;
 
 import java.io.Serializable;
 import java.time.Instant;
+import java.util.Date;
 import java.util.LinkedHashSet;
 import java.util.Set;
 @Setter
@@ -25,8 +26,8 @@ public class CityDto implements Serializable{
 
     private CountryDto country;
 
-    private Instant lastUpdate;
+    private Date lastUpdate;
 
-    private Set<AddressDto> addresses = new LinkedHashSet<>();
+    // private Set<AddressDto> addresses = new LinkedHashSet<>();
 
 }

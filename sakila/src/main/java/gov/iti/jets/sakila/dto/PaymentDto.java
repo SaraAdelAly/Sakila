@@ -9,6 +9,7 @@ import lombok.Setter;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.Instant;
+import java.util.Date;
 @Setter
 @Getter
 // @ToString
@@ -19,7 +20,7 @@ public class PaymentDto implements Serializable {
     private StaffDto staff;
     private RentalDto rental;
     private BigDecimal amount;
-    private Instant paymentDate;
-    private Instant lastUpdate;
+    private Date paymentDate;
+    private Date lastUpdate;
 
 }

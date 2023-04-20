@@ -27,12 +27,12 @@ public class RentalServices {
         return rentalDao.getRentalOperationNumByStaffId(staffId);
     }
 
-    public Long getRentalOperationsNumByDateNdStaff(int staffId, int year, int month, int day) {
-        return rentalDao.getRentalOperationsNumByDateNdStaff(staffId, year, month, day);
+    public Long getRentalOperationsNumByDate(int staffId, int year, int month, int day) {
+        return rentalDao.getRentalOperationsNumByDate(staffId, year, month, day);
     }
 
-    public Long getRentalOperationsNumByMonthNdStaff(int staffId, int year, int month) {
-        return rentalDao.getRentalOperationsNumByMonthNdStaff(staffId, year, month);
+    public Long getRentalOperationsNumByDate(int staffId, int year, int month) {
+        return rentalDao.getRentalOperationsNumByDate(staffId, year, month);
     }
 
     public Long getRentalOperationsNumByDate(int year, int month) {

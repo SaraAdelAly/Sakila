@@ -28,7 +28,6 @@ public class StaffDao implements StaffInt {
         entityManager.persist(staff);
         transaction.commit();
         entityManager.refresh(staff);
-        entityManager.close();
         return staff;
     }
     public void deleteStaffById (int staffId){

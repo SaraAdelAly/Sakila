@@ -10,6 +10,7 @@ import lombok.Setter;
 
 import java.io.Serializable;
 import java.time.Instant;
+import java.util.Date;
 import java.util.LinkedHashSet;
 import java.util.Set;
 @Setter
@@ -20,7 +21,7 @@ public class CountryDto implements Serializable {
 
     private Integer id;
     private String country;
-    private Instant lastUpdate;
-    private Set<CityDto> cities = new LinkedHashSet<>();
+    private Date lastUpdate;
+    // private Set<CityDto> cities = new LinkedHashSet<>();
 
 }

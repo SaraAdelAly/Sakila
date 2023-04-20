@@ -9,6 +9,7 @@ import lombok.Setter;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.Instant;
+import java.util.Date;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
@@ -17,9 +18,9 @@ import java.util.Set;
 // @ToString
 @NoArgsConstructor
 public class FilmDto implements Serializable {
-    private final Set<InventoryDto> inventories = new LinkedHashSet<>();
-    private final Set<FilmActorDto> filmActors = new LinkedHashSet<>();
-    private final Set<FilmCategoryDto> filmCategories = new LinkedHashSet<>();
+    // private final Set<InventoryDto> inventories = new LinkedHashSet<>();
+    // private final Set<FilmActorDto> filmActors = new LinkedHashSet<>();
+    // private final Set<FilmCategoryDto> filmCategories = new LinkedHashSet<>();
     private Integer id;
     private String title;
     private String description;
@@ -32,7 +33,7 @@ public class FilmDto implements Serializable {
     private BigDecimal replacementCost;
     private String rating;
     private String specialFeatures;
-    private Instant lastUpdate;
+    private Date lastUpdate;
 
 
 }

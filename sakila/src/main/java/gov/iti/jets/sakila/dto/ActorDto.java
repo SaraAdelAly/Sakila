@@ -22,6 +22,6 @@ public class ActorDto implements Serializable{
     private String firstName;
     private String lastName;
     private Date lastUpdate;
-    private Set<FilmActorDto> filmActors = new LinkedHashSet<>();
+    // private Set<FilmActorDto> filmActors = new LinkedHashSet<>();
 
 }

@@ -32,7 +32,7 @@ public class RentalDao implements RentalInt {
     }
 
     @Override
-    public Long getRentalOperationsNumByDateNdStaff(int staffId, int year,  int month, int day) {
+    public Long getRentalOperationsNumByDate(int staffId, int year,  int month, int day) {
         String jpql = "SELECT COUNT (r) FROM Rental r WHERE r.staff.id= :staffId AND YEAR(r.rentalDate) = :year AND MONTH(r.rentalDate) = :month AND DAY(r.rentalDate)= :day";
         Query query = entityManager.createQuery(jpql);
         query.setParameter("staffId", staffId);
@@ -41,8 +41,8 @@ public class RentalDao implements RentalInt {
         query.setParameter("day",day);
         return (Long) query.getSingleResult();
     }
-
-    public Long getRentalOperationsNumByMonthNdStaff(int staffId, int year,  int month) {
+    @Override
+    public Long getRentalOperationsNumByDate(int staffId, int year,  int month) {
         String jpql = "SELECT COUNT (r) FROM Rental r WHERE r.staff.id= :staffId AND YEAR(r.rentalDate) = :year AND MONTH(r.rentalDate) = :month";
         Query query = entityManager.createQuery(jpql);
         query.setParameter("staffId", staffId);

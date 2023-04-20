@@ -8,6 +8,7 @@ import lombok.Setter;
 
 import java.io.Serializable;
 import java.time.Instant;
+import java.util.Date;
 import java.util.LinkedHashSet;
 import java.util.Set;
 @Setter
@@ -16,10 +17,10 @@ import java.util.Set;
 @NoArgsConstructor
 public class InventoryDto implements Serializable {
 
-    private final Set<RentalDto> rentals = new LinkedHashSet<>();
+    // private final Set<RentalDto> rentals = new LinkedHashSet<>();
     private Integer id;
     private FilmDto film;
     private StoreDto store;
-    private Instant lastUpdate;
+    private Date lastUpdate;
 
 }

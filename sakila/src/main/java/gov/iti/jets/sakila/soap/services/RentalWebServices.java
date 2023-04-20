@@ -24,12 +24,12 @@ public class RentalWebServices {
         return rentalServices.getRentalOperationNumByStaffId(staffId);
     }
     @WebMethod(operationName = "staffRentalOperationsNumberByDate")
-    public Long getRentalOperationsNumByDateNdStaff(@WebParam(name = "staffId")int staffId, @WebParam(name = "year")int year, @WebParam(name = "month")int month, @WebParam(name = "day")int day) {
-        return rentalServices.getRentalOperationsNumByDateNdStaff(staffId, year, month, day);
+    public Long getRentalOperationsNumByDate(@WebParam(name = "staffId")int staffId, @WebParam(name = "year")int year, @WebParam(name = "month")int month, @WebParam(name = "day")int day) {
+        return rentalServices.getRentalOperationsNumByDate(staffId, year, month, day);
     }
     @WebMethod(operationName = "staffRentalOperationsNumberByMonth")
-    public Long getRentalOperationsNumByMonthNdStaff(@WebParam(name = "staffId")int staffId, @WebParam(name = "year")int year, @WebParam(name = "month")int month) {
-        return rentalServices.getRentalOperationsNumByMonthNdStaff(staffId, year, month);
+    public Long getRentalOperationsNumByDate(@WebParam(name = "staffId")int staffId, @WebParam(name = "year")int year, @WebParam(name = "month")int month) {
+        return rentalServices.getRentalOperationsNumByDate(staffId, year, month);
     }
     @WebMethod(operationName = "getRentalOperationsNumByDate")
     public Long getRentalOperationsNumByDate(@WebParam(name = "year")int year, @WebParam(name = "month")int month) {

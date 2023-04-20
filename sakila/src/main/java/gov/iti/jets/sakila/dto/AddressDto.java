@@ -11,6 +11,7 @@ import lombok.Setter;
 
 import java.io.Serializable;
 import java.time.Instant;
+import java.util.Date;
 import java.util.LinkedHashSet;
 import java.util.Set;
 @Setter
@@ -18,8 +19,8 @@ import java.util.Set;
 // @ToString
 @NoArgsConstructor
 public class AddressDto implements Serializable {
-    private final Set<StoreDto> stores = new LinkedHashSet<>();
-    private final Set<CustomerDto> customers = new LinkedHashSet<>();
+    // private final Set<StoreDto> stores = new LinkedHashSet<>();
+    // private final Set<CustomerDto> customers = new LinkedHashSet<>();
     private Integer id;
     private String address;
     private String address2;
@@ -27,16 +28,7 @@ public class AddressDto implements Serializable {
     private CityDto city;
     private String postalCode;
     private String phone;
-    private Instant lastUpdate;
+    private Date lastUpdate;
 
-//    private Set<Staff> staffs = new LinkedHashSet<>();
-//
-
-/*
-    TODO [JPA Buddy] create field to map the 'location' column
-     Available actions: Define target Java type | Uncomment as is | Remove column mapping
-    @Column(name = "location", columnDefinition = "GEOMETRY(65535) not null")
-    private Object location;
-*/
 
 }

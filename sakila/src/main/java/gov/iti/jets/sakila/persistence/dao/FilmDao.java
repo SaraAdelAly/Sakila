@@ -50,7 +50,6 @@ public class FilmDao implements FilmInt {
     }
 
     public Film addFilm(Film film) {
-        EntityTransaction transaction = entityManager.getTransaction();
         transaction.begin();
         entityManager.persist(film);
         transaction.commit();
