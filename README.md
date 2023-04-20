@@ -10,4 +10,11 @@ The Sakila Database SOAP API is a web service that provides access to the Sakila
 5. run your apache maven to enable the server.
 6. deploy your project with this command: mvn clean install tomcat7:deploy. 
 
+The used technologies in this project:
+- Maven
+- Tomcat
+- Hibernate
+- JAX-WS
+- MySQL
+- postman
  
